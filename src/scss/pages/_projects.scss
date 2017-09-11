@@ -1,0 +1,94 @@
+.projects {
+	padding: 50px;
+	font-family: 'Rajdhani', sans-serif;
+
+	.title {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-bottom: 0;
+		font-size: $font-large;
+	}
+
+	.projectContainer {
+		padding: 25px 0;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+
+		.projectImg {
+			width: 450px;
+			height: 275px;
+			max-width: 100%;
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin: 0 25px;
+
+			.backwards {
+				position: relative;
+				float: left;
+				top: calc(50% - 6px);
+				left: 20px;
+				width: 12px;
+				height: 12px;
+				border-left: 4px $primary-dark solid;
+				border-bottom: 4px $primary-dark solid;
+				transform: rotate(45deg);
+				cursor: pointer;
+			}
+
+			.forwards {
+				position: relative;
+				float: right;
+				top: calc(50% - 6px);
+				right: 20px;
+				width: 12px;
+				height: 12px;
+				border-right: 4px $primary-dark solid;
+				border-bottom: 4px $primary-dark solid;
+				transform: rotate(-45deg);
+				cursor: pointer;
+			}
+		}
+
+		.projectInfo {
+			.title {
+				font-size: $font-medium;
+			}
+
+			.description {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: $tablet-up) {
+	.projects {
+		.projectContainer {
+			.projectImg {
+				min-width: 350px;
+				height: 250px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-only) {
+	.projects {
+
+		.projectContainer {
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			margin: 0 25px 0 0;
+		
+			.projectImg {
+				min-width: 400px;
+			}
+
+		}
+
+	}
+}

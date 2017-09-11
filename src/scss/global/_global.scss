@@ -1,0 +1,21 @@
+@import 'normalize';
+@import 'variables';
+@import 'header';
+
+.container {
+
+}
+
+@media screen and (min-width: $tablet-up) {
+	.container{
+		margin-left: 250px;
+	}
+}
+
+.divider{
+	width: 100%;
+	border-bottom: 0.25px #d3d3d3 solid;
+	box-shadow: none;
+}
+
+

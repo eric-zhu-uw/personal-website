@@ -1,0 +1,40 @@
+.contact {
+	padding: 50px;
+
+	.title {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: $font-large;
+	}
+
+	.subtitle {
+	}
+
+	.links {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: 400px;
+		margin: 25px auto;
+
+		.link {
+			text-decoration: none;
+			color: $primary-dark;
+			padding: 15px 25px;
+			background-color: $secondary;
+
+			&:hover {
+				background-color: $primary;
+				color: $primary-light;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-up) {
+	.contact {
+		.subtitle {
+			margin-left: 25px;
+		}
+	}
+}

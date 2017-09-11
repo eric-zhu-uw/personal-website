@@ -1,0 +1,81 @@
+.about {
+	padding: 50px;
+	font-family: 'Rajdhani', sans-serif;
+	color: $primary-dark;
+
+	.title {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: $font-large;
+		margin-top: 50px;
+	}
+
+	.textContainer {
+		margin: 0 25px;
+	}
+
+	.resumeContainer {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+
+		.date {
+			font-style: italic;
+			width: 100px;
+			margin-right: 25px;
+		}
+
+		.info {
+			margin-bottom: 1em;
+
+			.workTitle {
+				text-decoration: underline;
+			}
+
+			.techStack {
+				font-size: $font-extrasmall;
+			}
+
+			.bulletPoints {
+				line-height: 1.5em;
+			}
+		}
+
+		.education {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: flex-start;
+
+		}
+	}
+}
+
+.aboutLink {
+	color: $primary;
+	text-decoration: underline;
+}
+
+.aboutLink:visited {
+	color: $primary;
+}
+
+@media screen and (min-width: $tablet-up) {
+	.about {
+		.resumeContainer {
+
+			.date {
+				width: 150px;
+			}
+		}
+
+		.textContainer {
+
+			.textBullet {
+				margin-left: 50px;
+			}
+		}
+
+	}
+}

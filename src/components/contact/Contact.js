@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
 		return (
 			<div className='contact' id='contact'>
 				<h3 className='title'>Want to get in touch?</h3>
-				<p className='subtitle'>I'm interesting in pursing challenging internships or freelance development work.</p>
+				<p className='subtitle'>I'm interested in pursing challenging internships or freelance development work.</p>
 				<p className='subtitle'>Contact me at ericzhu77@gmail.com</p>
 				<div className='links'>
 					<a className='link' href='https://github.com/eric-zhu-uw'>Github</a>
